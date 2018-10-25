@@ -1,21 +1,24 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="app-container">
+<div class="navbar">
+  <a routerLink="/home" class="nav-item nav-link" routerLinkActive="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Galleries
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+    <a routerLink="/galleries/macro" routerLinkActive="active">Macro</a>
+    <a routerLink="/galleries/landscape" routerLinkActive="active">Landscapes</a>
+    <a routerLink="/galleries/architecture" routerLinkActive="active">Architecture</a>
+    <a routerLink="/galleries/portrait" routerLinkActive="active">Portraits</a>
+    <a routerLink="/galleries/food" routerLinkActive="active">Food</a>
+    <a routerLink="/galleries/animals" routerLinkActive="active">Animals</a>
+    <a routerLink="/galleries/black-and-white" routerLinkActive="active">B & W</a>
+    <a routerLink="/galleries/other" routerLinkActive="active">Other</a>
+    </div>
+  </div> 
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="outlet"><router-outlet></router-outlet></div>
+<app-footer></app-footer>
+</div>
 
-<router-outlet></router-outlet>
+

@@ -1,0 +1,28 @@
+h2,p{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 10px auto;
+} 
+
+.about-container{
+    padding: 50px;
+    margin: 50px;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 850.98px) { 
+.about-container{
+    padding: 25px;
+    margin: 25px;
+}
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 500.98px){
+.about-container{
+    padding: 10px;
+    margin: 10px;
+}
+}

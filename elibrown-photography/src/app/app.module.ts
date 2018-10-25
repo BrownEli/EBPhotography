@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SlideshowModule } from 'ng-simple-slideshow';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +40,8 @@ import { AnimalsComponent } from './animals/animals.component';
     AnimalsComponent
   ],
   imports: [
+    SlideshowModule,
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule
   ],

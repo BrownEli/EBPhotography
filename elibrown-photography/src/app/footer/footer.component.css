@@ -1,0 +1,65 @@
+.my-footer{
+	background: #000;
+	width: 100%;
+	height: 500px;
+	position:relative;
+}
+
+.footer-copyright-container{
+	width: 100%;
+	padding:8px;
+	position:absolute;
+	bottom:0px;	
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-copyright{
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+}
+
+.email{
+    font-size:18px;
+}
+
+.social-btn{
+	padding:15px;
+	width: 220px;
+	color:#fff;
+	position: absolute;
+	bottom: 90px;
+    right: 25%;
+    left: 50%;
+    margin-left:-110px;
+	text-align: center;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 75px;
+	height: 75px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-instagram,.fa-facebook {
+  color: white;
+}
+
+p,h1{
+	color: white;
+}
+
+.contact{
+	padding: 15px;
+	width: 300px;
+	position: absolute;
+	bottom: 300px;
+    right: 25%;
+    left: 50%;
+    margin-left:-150px;
+	text-align: center;
+}
