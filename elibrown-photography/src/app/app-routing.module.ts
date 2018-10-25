@@ -6,7 +6,7 @@ import { PortraitGallaryComponent } from './portrait-gallary/portrait-gallary.co
 import { MacroGallaryComponent } from './macro-gallary/macro-gallary.component';
 import { LandscapeGallaryComponent } from './landscape-gallary/landscape-gallary.component';
 import { FoodGallaryComponent } from './food-gallary/food-gallary.component';
-import { EverydayObjectGallaryComponent } from './everyday-object-gallary/everyday-object-gallary.component';
+import { OtherGallaryComponent } from './other-gallary/other-gallary.component';
 import { BlackAndWhiteComponent } from './black-and-white/black-and-white.component';
 import { ArchitectureComponent } from './architecture/architecture.component';
 import { AnimalsComponent } from './animals/animals.component';
@@ -39,7 +39,7 @@ const routes: Routes = [
         { path: 'black-and-white' ,component: BlackAndWhiteComponent, children: [
       { path: 'img', component: ImageDialogComponent }
     ] },
-		{ path: 'other' ,component: EverydayObjectGallaryComponent, children: [
+		{ path: 'other' ,component: OtherGallaryComponent, children: [
       { path: 'img', component: ImageDialogComponent }
     ] },
 		{ path: '', redirectTo: 'macro', pathMatch: 'full'}
